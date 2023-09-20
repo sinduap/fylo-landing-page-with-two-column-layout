@@ -35,8 +35,8 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <header class="header">
+    <header class="header">
+      <div class="container">
         <nav class="navbar">
           <img class="navbar__logo" src="images/logo.svg" alt="Fylo Logo" />
           <ul class="navbar__links">
@@ -51,36 +51,121 @@
             </li>
           </ul>
         </nav>
-      </header>
+      </div>
+    </header>
 
-      <section class="hero">
-        <section class="hero__text">
-          <h1 class="primary-heading">
-            All your files in one secure location, accessible anywhere.
-          </h1>
-          <p>
-            Fylo stores your most important files in one secure location. Access
-            them whenever you need, share and collaborate with friend, family,
-            and co-workers.
-          </p>
-          <form class="hero__form" action="#" method="get">
-            <input
-              class="hero__email"
-              type="email"
-              name="email"
-              placeholder="Enter your email..."
-            />
-            <button class="btn">Get Started</button>
-          </form>
+    <div class="wrapper">
+      <div class="container">
+        <section class="hero">
+          <section class="box">
+            <h2 class="heading-primary">
+              All your files in one secure location, accessible anywhere.
+            </h2>
+            <p class="hero__paragraph">
+              Fylo stores your most important files in one secure location.
+              Access them wherever you need, share and collaborate with friends,
+              family, and co-workers.
+            </p>
+            <form class="hero__form" action="#" method="get">
+              <input
+                class="hero__email"
+                type="email"
+                name="email"
+                placeholder="Enter your email..."
+              />
+              <button class="btn">Get Started</button>
+            </form>
+          </section>
+          <img
+            class="hero__illustration"
+            src="images/illustration-1.svg"
+            alt="illustration 1"
+          />
         </section>
-        <img
-          class="hero__img"
-          src="images/illustration-1.svg"
-          alt="illustration 1"
-        />
-      </section>
+      </div>
+
+      <div class="custom-shape-divider-bottom-1695186625">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
     </div>
 
+    <section class="details">
+      <section class="details__container">
+        <section class="box">
+          <h2 class="heading-primary">Stay productive, wherever you are</h2>
+          <p class="paragraph">
+            Never let location be an issue when accessing your files. Fylo has
+            you covered for all of your file storage needs.
+          </p>
+          <p class="paragraph">
+            Securelly share files and folders with friends, family and
+            colleagues for live collaboration No email attachments required!
+          </p>
+          <a class="how-it-works" href="#"
+            >See how Fylo works
+            <img src="images/icon-arrow.svg" alt="Icon arrow"
+          /></a>
+        </section>
+
+        <img
+          class="details__illustration"
+          src="images/illustration-2.svg"
+          alt=""
+        />
+
+        <article class="testimonial">
+          <img
+            class="testimonial__icon"
+            src="images/icon-quotes.svg"
+            alt="Icon quotes"
+          />
+          <p class="testimonial__paragraph">
+            Fylo has improved our team productivity by an order of magnitude.
+            Since making the switch our team has become a well-oiled
+            collaboration machine.
+          </p>
+          <section class="testimonial__user">
+            <img
+              class="testimonial__avatar"
+              src="images/avatar-testimonial.jpg"
+              alt="Kyle Burton"
+            />
+            <h4 class="testimonial__name">Kyle Burton</h4>
+            <p class="testimonial__title">Founder & CEO, Huddle</p>
+          </section>
+        </article>
+      </section>
+    </section>
+
+    <section class="cta">
+      <div class="cta__container">
+        <h3 class="heading-secondary">Get early access today</h3>
+        <p class="paragraph">
+          It only takes minute to sign up and our free starter tier is
+          extremelly generous. If you have any question, our support team would
+          be happy to help you.
+        </p>
+        <form class="cta__form" action="#" method="get">
+          <input
+            type="email"
+            name="email"
+            class="cta__email"
+            placeholder="email@example.com"
+          />
+          <button class="btn">Get Started For Free</button>
+        </form>
+      </div>
+    </section>
     Features Team Sign In All your files in one secure location, accessible
     anywhere. Fylo stores your most important files in one secure location.
     Access them wherever you need, share and collaborate with friends, family,
@@ -101,7 +186,8 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by
+        <a href="https://github.com/sinduap">Sindu Andita Pratama</a>.
       </p>
     </footer>
   </body>

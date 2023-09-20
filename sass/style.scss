@@ -6,6 +6,8 @@
   --neutral-white: hsl(240, 75%, 98%);
   --neutral-gray: hsl(0, 0%, 75%);
   --fw-bold: 700;
+  --shadow-1: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+  --shadow-2: 3px 3px 3px 0px rgba(0, 0, 0, 0.2);
 }
 
 * {
@@ -52,7 +54,7 @@ button {
   align-items: center;
 
   &__logo {
-    height: 4.4rem;
+    height: 4rem;
   }
 
   &__links {
@@ -62,52 +64,211 @@ button {
   }
 }
 
-.primary-heading {
-  font-size: 3.2rem;
+.wrapper {
+  position: relative;
+  height: 70rem;
 }
 
 .hero {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 9.8rem;
   align-items: center;
 
-  &__text {
-    display: flex;
-    flex-direction: column;
-    gap: 1.8rem;
+  &__paragraph {
+    width: 53ch;
   }
 
-  &__img {
+  &__illustration {
+    margin-top: 6.2rem;
     width: 100%;
   }
 
   &__form {
     display: flex;
     align-items: center;
-    gap: 1.2rem;
+    gap: 1rem;
+    align-self: stretch;
   }
 
   &__email {
-    width: 55%;
-    padding: 1rem 2rem;
+    width: 43%;
+    padding: 1.1rem 2rem;
+    border: 1px solid #444;
+    border-radius: 2px;
+    box-shadow: var(--shadow-2);
+
+    &::placeholder {
+      filter: brightness(1.5);
+    }
+  }
+}
+
+.details {
+  background-color: var(--neutral-white);
+  padding-bottom: 12.4rem;
+
+  &__container {
+    max-width: 1140px;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 4.4rem;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    row-gap: 4.4rem;
   }
 
-  &__email::placeholder {
-    filter: brightness(1.5);
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
   }
+
+  &__illustration {
+    margin-top: 2.4rem;
+    width: 100%;
+    grid-row: 1 / span 2;
+    grid-column: 2 / -1;
+  }
+}
+
+.testimonial {
+  padding: 2.4rem 3.8rem;
+  background-color: #fff;
+  width: 52%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  box-shadow: var(--shadow-1);
+
+  &__paragraph {
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+  }
+
+  &__user {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0 1rem;
+  }
+
+  &__avatar {
+    grid-row: 1 / span 2;
+    height: 4rem;
+    border-radius: 50%;
+  }
+
+  &__name {
+    font-size: 1.2rem;
+  }
+
+  &__title {
+    font-size: 1rem;
+  }
+}
+
+.cta {
+  background-color: var(--primary-light);
+  color: #fff;
+
+  &__container {
+    max-width: 1140px;
+    width: 90%;
+    padding: 12.4rem 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    row-gap: 2rem;
+  }
+
+  &__form {
+    grid-column: 2 / -1;
+    grid-row: 1 / span 2;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.6rem;
+  }
+
+  &__email {
+    width: 100%;
+    padding: 1.4rem 2rem;
+    border: none;
+    box-shadow: var(--shadow-2);
+    border-radius: 2px;
+
+    &::placeholder {
+      filter: brightness(1.5);
+    }
+  }
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.heading-primary {
+  font-size: 3.6rem;
+  width: 30ch;
+  // margin-bottom: 1rem;
+}
+
+.heading-secondary {
+  font-size: 3rem;
+  width: 27ch;
+}
+
+.paragraph {
+  width: 52ch;
 }
 
 .btn {
   cursor: pointer;
   color: var(--neutral-white);
   background-color: var(--accent-1);
-
-  padding: 1rem 4.5rem;
+  padding: 1rem 0;
   border-radius: 3px;
   font-weight: 700;
   border-color: var(--accent-1);
   border-style: solid;
+  letter-spacing: 0.25px;
+  width: 20rem;
+  text-align: center;
+  box-shadow: var(--shadow-2);
 }
 
-// 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+.how-it-works:link {
+  color: var(--accent-2);
+  border-bottom: 1px solid currentColor;
+  display: inline-flex;
+  gap: 1rem;
+  align-items: center;
+  padding-bottom: 0.25rem;
+}
+
+// Shape divider
+.custom-shape-divider-bottom-1695186625 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1695186625 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 200px;
+}
+
+.custom-shape-divider-bottom-1695186625 .shape-fill {
+  fill: var(--neutral-white);
+}
